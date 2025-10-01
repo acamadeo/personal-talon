@@ -5,9 +5,11 @@ jj sync all:
 
 jj log:
     insert("jj log")
+    key(enter)
 
 jj diff:
     insert("jj diff")
+    key(enter)
 
 jj diff <user.jj_commit>:
     insert("jj diff -r {jj_commit}")
@@ -20,12 +22,15 @@ jj edit <user.jj_commit>:
 
 jj new:
     insert("jj new")
+    key(enter)
 
 jj new <user.jj_bookmark>:
     insert("jj new {jj_bookmark}")
+    key(enter)
 
 jj new <user.jj_commit>:
     insert("jj new {jj_commit}")
+    key(enter)
 
 jj commit:
     insert("jj commit")
