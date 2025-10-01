@@ -22,8 +22,7 @@ jj new:
     insert("jj new")
 
 jj new <user.jj_bookmark>:
-    insert("jj new ")
-    insert(jj_bookmark or "")
+    insert("jj new {jj_bookmark}")
 
 jj new <user.jj_commit>:
     insert("jj new {jj_commit}")
@@ -32,9 +31,7 @@ jj commit:
     insert("jj commit")
 
 jj commit <user.text>:
-    insert("jj commit -m \"")
-    insert(text or "")
-    insert("\"")
+    insert("jj commit -m \"{text}\"")
 
 jj desk:
     insert("jj desc")
@@ -47,6 +44,9 @@ jj rebase <user.commit_source> <user.commit_destination>:
 
 jj move book <user.jj_bookmark> <user.commit_destination>:
     insert("jj bookmark move {jj_bookmark} --to {commit_destination}")
+
+jj abandon <user.jj_commit>:
+    insert("jj abandon {jj_commit}")
 
 jj get fetch:
     insert("jj git fetch")
