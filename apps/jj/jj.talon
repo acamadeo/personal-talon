@@ -1,8 +1,5 @@
 tag: user.jj
 -
-jj sync all:
-    insert("jj sync --all")
-
 jj log:
     insert("jj log")
     key(enter)
