@@ -30,6 +30,10 @@ jj new <user.jj_commit>:
 jj commit:
     insert("jj commit")
 
+jj commit message:
+    insert("jj commit -m \"\"")
+    key(left)
+
 jj commit <user.text>:
     insert("jj commit -m \"{text}\"")
 
