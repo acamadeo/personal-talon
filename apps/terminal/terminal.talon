@@ -3,6 +3,19 @@ app: terminal
 -
 tag(): user.jj
 
+clear word last:
+    key(ctrl-w)
+
+clear line:
+    key(ctrl-u)
+
+cancel:
+    key(ctrl-c)
+
+run last:
+    key(up)
+    key(enter)
+
 tee mux a:
     insert("tmux a")
 

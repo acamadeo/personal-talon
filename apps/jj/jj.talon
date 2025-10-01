@@ -33,7 +33,8 @@ jj commit:
     insert("jj commit")
 
 jj commit message:
-    insert_between("jj commit -m \"\"", '"')
+    insert("jj commit -m \"\"")
+    key(left)
 
 jj commit <user.text>:
     insert("jj commit -m \"{text}\"")
