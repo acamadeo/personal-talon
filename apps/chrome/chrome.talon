@@ -1,11 +1,14 @@
 app: chrome
 -
-tab refresh:
+# TODO: Add command for "go three tabs left"
+
+tab (refresh | fresh):
     user.chrome_mod("r")
 
 tab new paste:
     user.chrome_mod("t")
     user.chrome_mod("v")
+    key(enter)
 
 # Solution from https://superuser.com/a/338543
 tab pop out:
