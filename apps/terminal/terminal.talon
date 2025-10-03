@@ -16,6 +16,10 @@ run last:
     key(up)
     key(enter)
 
+ssh <user.text>:
+    insert("ssh {text}")
+    key(enter)
+
 tee mux a:
     insert("tmux a")
 
