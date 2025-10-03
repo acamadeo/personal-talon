@@ -28,3 +28,24 @@ copy plink:
     user.chrome_mod("c")
     key(esc)
     key(esc)
+
+# Specific apps
+tab new calendar:
+    user.chrome_mod("t")
+    insert("calendar.google.com/")
+    key(enter)
+
+tab new drive:
+    user.chrome_mod("t")
+    insert("drive.google.com/")
+    key(enter)
+
+tab new gmail:
+    user.chrome_mod("t")
+    insert("mail.google.com/")
+    key(enter)
+
+tab new youtube:
+    user.chrome_mod("t")
+    insert("youtube.com/")
+    key(enter)
