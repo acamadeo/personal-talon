@@ -6,24 +6,20 @@ ex clomp:
     key(space)
 
 spam:
-    key(,)
-    key(space)
+    insert(", ")
 
 whomp:
-    key(.)
-    key(space)
+    insert(". ")
 
 bomp:
-    key(-)
-    key(space)
+    insert("- ")
 
 clomp:
     key(:)
     key(space)
 
 dat bomp:
-    insert("--")
-    key(space)
+    insert("-- ")
 
 tab back:
     key(shift-tab)
