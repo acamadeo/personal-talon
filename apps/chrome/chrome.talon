@@ -5,6 +5,10 @@ app: chrome
 tab (refresh | fresh):
     user.chrome_mod("r")
 
+# Requires extension: https://chromewebstore.google.com/detail/tab-duplicator/lfmcdmbfaplkbjkefabcfbkfelmhhboa
+tab dupe:
+    key(alt-shift-d)
+
 tab new paste:
     user.chrome_mod("t")
     user.chrome_mod("v")

@@ -12,6 +12,9 @@ clear line:
 cancel:
     key(ctrl-c)
 
+dancel:
+    key(ctrl-d)
+
 run last:
     key(up)
     key(enter)
@@ -22,6 +25,8 @@ ssh <user.text>:
 
 tee mux a:
     insert("tmux a")
+    key(enter)
 
 tee mux new:
     insert("tmux new")
+    key(enter)

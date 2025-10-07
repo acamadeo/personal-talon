@@ -13,6 +13,10 @@ bomp:
     key(-)
     key(space)
 
+clomp:
+    key(:)
+    key(space)
+
 dat bomp:
     insert("--")
     key(space)
