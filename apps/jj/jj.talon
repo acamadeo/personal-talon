@@ -13,6 +13,7 @@ jj diff <user.jj_commit>:
 
 jj squash:
     insert("jj squash")
+    key(enter)
 
 jj edit <user.jj_commit>:
     insert("jj edit {jj_commit}")
@@ -41,6 +42,7 @@ jj commit <user.text>:
 
 jj desk:
     insert("jj desc")
+    key(enter)
 
 jj desk <user.jj_commit>:
     insert("jj desc -r {jj_commit}")

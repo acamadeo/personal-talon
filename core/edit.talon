@@ -1,6 +1,10 @@
 -
 clap: key(enter)
 
+ex clomp:
+    key(!)
+    key(space)
+
 spam:
     key(,)
     key(space)
@@ -20,3 +24,6 @@ clomp:
 dat bomp:
     insert("--")
     key(space)
+
+tab back:
+    key(shift-tab)
