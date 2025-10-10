@@ -14,10 +14,16 @@ def jj_commit(m) -> str:
 def jj_bookmark(m) -> str:
     return m.text
 
-@mod.capture(rule="<user.jj_commit>")
-def commit_source(m) -> str:
-    return m.jj_commit
 
-@mod.capture(rule="to <user.jj_commit>")
-def commit_destination(m) -> str:
-    return m.jj_commit
+@mod.capture(rule="( <user.jj_commit> | <self.jj_bookmark>)")
+def jj_commitmark(m) -> str:
+    return str(m)
+
+
+@mod.capture(rule="<user.jj_commitmark>")
+def commitmark_source(m) -> str:
+    return m.jj_commitmark
+
+@mod.capture(rule="to <user.jj_commitmark>")
+def commitmark_destination(m) -> str:
+    return m.jj_commitmark

@@ -4,5 +4,6 @@ api
 config
 jj
 marl: main
+ok: okay
 readonly
 toodoo: todo

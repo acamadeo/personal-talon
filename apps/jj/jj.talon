@@ -47,11 +47,11 @@ jj desk:
 jj desk <user.jj_commit>:
     insert("jj desc -r {jj_commit}")
 
-jj rebase <user.commit_source> <user.commit_destination>:
-    insert("jj rebase -s {commit_source} -d {commit_destination}")
+jj rebase <user.commitmark_source> <user.commitmark_destination>:
+    insert("jj rebase -s {commitmark_source} -d {commitmark_destination}")
 
-jj move book <user.jj_bookmark> <user.commit_destination>:
-    insert("jj bookmark move {jj_bookmark} --to {commit_destination}")
+jj move book <user.jj_bookmark> <user.commitmark_destination>:
+    insert("jj bookmark move {jj_bookmark} --to {commitmark_destination}")
 
 jj abandon <user.jj_commit>:
     insert("jj abandon {jj_commit}")
