@@ -10,6 +10,7 @@ jj diff:
 
 jj diff <user.jj_commit>:
     insert("jj diff -r {jj_commit}")
+    key(enter)
 
 jj squash:
     insert("jj squash")
@@ -17,6 +18,7 @@ jj squash:
 
 jj edit <user.jj_commit>:
     insert("jj edit {jj_commit}")
+    key(enter)
 
 jj new:
     insert("jj new")
@@ -46,6 +48,7 @@ jj desk:
 
 jj desk <user.jj_commit>:
     insert("jj desc -r {jj_commit}")
+    key(enter)
 
 jj rebase <user.commitmark_source> <user.commitmark_destination>:
     insert("jj rebase -s {commitmark_source} -d {commitmark_destination}")
@@ -58,6 +61,7 @@ jj abandon <user.jj_commit>:
 
 jj get fetch:
     insert("jj git fetch")
+    key(enter)
 
 jj get push <user.jj_bookmark>:
     insert("jj git push --bookmark {jj_bookmark}")
