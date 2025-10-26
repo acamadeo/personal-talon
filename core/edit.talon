@@ -35,5 +35,3 @@ tab back:
 # Undo / redo
 nope: edit.undo()
 yes indeed: edit.redo()
-
-# TODO: Need a command besides `say` that inserts a final ` ` after the text.

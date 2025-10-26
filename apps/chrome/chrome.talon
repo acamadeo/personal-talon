@@ -1,6 +1,8 @@
 app: chrome
 -
-# TODO: Add command for "go three tabs left"
+# TIPS
+#  - To go 3 tabs left: "tab last third"
+#  - To go 3 tabs right: "tab next third"
 
 tab (refresh | fresh):
     user.chrome_mod("r")
