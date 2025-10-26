@@ -15,7 +15,7 @@ def jj_bookmark(m) -> str:
     return m.text
 
 
-@mod.capture(rule="( <user.jj_commit> | <self.jj_bookmark>)")
+@mod.capture(rule="(<user.jj_commit> | <self.jj_bookmark>)")
 def jj_commitmark(m) -> str:
     return str(m)
 

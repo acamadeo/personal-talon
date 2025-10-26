@@ -2,8 +2,10 @@ list: user.vocabulary
 -
 api
 config
+enum
 jj
 marl: main
 ok: okay
+parallelizable
 readonly
 toodoo: todo

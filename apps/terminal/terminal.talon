@@ -9,11 +9,17 @@ clear word last:
 clear line:
     key(ctrl-u)
 
+clear screen:
+    key(cmd-k)
+
 cancel:
     key(ctrl-c)
 
 dancel:
     key(ctrl-d)
+
+(hunt this) | (look up):
+    key(ctrl-r)
 
 run last:
     key(up)

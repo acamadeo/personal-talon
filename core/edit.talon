@@ -1,18 +1,23 @@
 -
+semi: key(;)
+
 clap: key(enter)
 
 ex clomp:
     key(!)
     key(space)
 
-spam:
+comp | spam:
     insert(", ")
 
-whomp:
+stomp:
     insert(". ")
 
 bomp:
     insert("- ")
+
+quomp:
+    insert("? ")
 
 clomp:
     key(:)
@@ -23,3 +28,9 @@ dat bomp:
 
 tab back:
     key(shift-tab)
+
+# Undo / redo
+nope: edit.undo()
+yes indeed: edit.redo()
+
+# TODO: Need a command besides `say` that inserts a final ` ` after the text.
