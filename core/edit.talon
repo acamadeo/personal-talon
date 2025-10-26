@@ -14,6 +14,9 @@ stomp:
     insert(". ")
 
 bomp:
+    insert("! ")
+
+domp:
     insert("- ")
 
 quomp:

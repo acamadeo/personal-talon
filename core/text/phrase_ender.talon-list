@@ -1,0 +1,9 @@
+list: user.phrase_ender
+-
+void: " "
+stomp: ". "
+comp: ", "
+bomp: "! "
+domp: "- "
+quomp: "? "
+clomp: ": "
