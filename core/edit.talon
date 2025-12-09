@@ -26,12 +26,18 @@ clomp:
     key(:)
     key(space)
 
-dat bomp:
+dub domp:
     insert("-- ")
 
 tab back:
     key(shift-tab)
 
+void:
+    key(space)
+
 # Undo / redo
 nope: edit.undo()
 yes indeed: edit.redo()
+
+# TODO:
+#  - You can say `strings foo` to do 'foo'. Implement a similar thing for parens, brackets, braces.

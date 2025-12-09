@@ -29,7 +29,7 @@ ssh <user.text>:
     insert("ssh {text}")
     key(enter)
 
-tee mux a:
+tee mux (a | attach):
     insert("tmux a")
     key(enter)
 

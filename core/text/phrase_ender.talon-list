@@ -1,6 +1,7 @@
 list: user.phrase_ender
 -
 void: " "
+ex clomp: "! "
 stomp: ". "
 comp: ", "
 bomp: "! "

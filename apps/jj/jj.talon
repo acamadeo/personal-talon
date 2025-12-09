@@ -50,8 +50,13 @@ jj desk <user.jj_commit>:
     insert("jj desc -r {jj_commit}")
     key(enter)
 
+jj abandon:
+    insert("jj abandon")
+    key(enter)
+
 jj rebase <user.commitmark_source> <user.commitmark_destination>:
     insert("jj rebase -s {commitmark_source} -d {commitmark_destination}")
+    key(enter)
 
 jj move book <user.jj_bookmark> <user.commitmark_destination>:
     insert("jj bookmark move {jj_bookmark} --to {commitmark_destination}")
