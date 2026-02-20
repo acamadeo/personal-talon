@@ -6,6 +6,11 @@ mod.tag("jj", desc="commands for working with Jujutsu")
 
 apps = mod.apps
 
+# Say any of the following to start a jj command.
+@mod.capture(rule="jj | juju")
+def jj_command(m) -> str:
+    return "jj"
+
 @mod.capture(rule="<user.letter>+")
 def jj_commit(m) -> str:
     return "".join(m.letter_list)

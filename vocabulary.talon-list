@@ -1,9 +1,11 @@
 list: user.vocabulary
 -
 api
+ceili: cli
 config
 enum
 jj
+jay see: json
 marl: main
 ok: okay
 parallelizable

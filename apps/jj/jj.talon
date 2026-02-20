@@ -4,6 +4,10 @@ jj log:
     insert("jj log")
     key(enter)
 
+jj status:
+    insert("jj st")
+    key(enter)
+
 jj diff:
     insert("jj diff")
     key(enter)
@@ -14,6 +18,10 @@ jj diff <user.jj_commit>:
 
 jj squash:
     insert("jj squash")
+    key(enter)
+
+jj squash into <user.jj_commit>:
+    insert("jj squash -t {jj_commit}")
     key(enter)
 
 jj edit <user.jj_commit>:
@@ -56,6 +64,10 @@ jj abandon:
 
 jj rebase <user.commitmark_source> <user.commitmark_destination>:
     insert("jj rebase -s {commitmark_source} -d {commitmark_destination}")
+    key(enter)
+
+jj split:
+    insert("jj split")
     key(enter)
 
 jj move book <user.jj_bookmark> <user.commitmark_destination>:
