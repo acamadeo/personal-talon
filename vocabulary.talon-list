@@ -3,9 +3,11 @@ list: user.vocabulary
 api
 ceili: cli
 config
+de duplicate: deduplicate
 enum
 jj
 jay see: json
+man bow: main
 marl: main
 ok: okay
 parallelizable

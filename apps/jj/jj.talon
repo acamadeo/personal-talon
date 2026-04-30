@@ -1,84 +1,85 @@
 tag: user.jj
 -
-jj log:
+<user.jj_command> log:
     insert("jj log")
     key(enter)
 
-jj status:
+<user.jj_command> status:
     insert("jj st")
     key(enter)
 
-jj diff:
+<user.jj_command> diff:
     insert("jj diff")
     key(enter)
 
-jj diff <user.jj_commit>:
+<user.jj_command> diff <user.jj_commit>:
     insert("jj diff -r {jj_commit}")
     key(enter)
 
-jj squash:
+<user.jj_command> squash:
     insert("jj squash")
     key(enter)
 
-jj squash into <user.jj_commit>:
+<user.jj_command> squash into <user.jj_commit>:
     insert("jj squash -t {jj_commit}")
     key(enter)
 
-jj edit <user.jj_commit>:
+<user.jj_command> edit <user.jj_commit>:
     insert("jj edit {jj_commit}")
     key(enter)
 
-jj new:
+<user.jj_command> new:
     insert("jj new")
     key(enter)
 
-jj new <user.jj_bookmark>:
+<user.jj_command> new <user.jj_bookmark>:
     insert("jj new {jj_bookmark}")
     key(enter)
 
-jj new <user.jj_commit>:
+<user.jj_command> new <user.jj_commit>:
     insert("jj new {jj_commit}")
     key(enter)
 
-jj commit:
+<user.jj_command> commit:
     insert("jj commit")
 
-jj commit message:
+<user.jj_command> commit message:
     insert("jj commit -m \"\"")
     key(left)
 
-jj commit <user.text>:
+<user.jj_command> commit <user.text>:
     insert("jj commit -m \"{text}\"")
 
-jj desk:
+<user.jj_command> desk:
     insert("jj desc")
     key(enter)
 
-jj desk <user.jj_commit>:
+<user.jj_command> desk <user.jj_commit>:
     insert("jj desc -r {jj_commit}")
     key(enter)
 
-jj abandon:
+<user.jj_command> abandon:
     insert("jj abandon")
     key(enter)
 
-jj rebase <user.commitmark_source> <user.commitmark_destination>:
+<user.jj_command> rebase <user.commitmark_source> <user.commitmark_destination>:
     insert("jj rebase -s {commitmark_source} -d {commitmark_destination}")
     key(enter)
 
-jj split:
+<user.jj_command> split:
     insert("jj split")
     key(enter)
 
-jj move book <user.jj_bookmark> <user.commitmark_destination>:
+<user.jj_command> move book <user.jj_bookmark> <user.commitmark_destination>:
     insert("jj bookmark move {jj_bookmark} --to {commitmark_destination}")
 
-jj abandon <user.jj_commit>:
+<user.jj_command> abandon <user.jj_commit>:
     insert("jj abandon {jj_commit}")
+    key(enter)
 
-jj get fetch:
+<user.jj_command> get fetch:
     insert("jj git fetch")
     key(enter)
 
-jj get push <user.jj_bookmark>:
+<user.jj_command> get push <user.jj_bookmark>:
     insert("jj git push --bookmark {jj_bookmark}")

@@ -1,6 +1,8 @@
 -
 semi: key(;)
 
+score: key(_)
+
 clap: key(enter)
 
 ex clomp:
@@ -23,8 +25,7 @@ quomp:
     insert("? ")
 
 clomp:
-    key(:)
-    key(space)
+    insert(": ")
 
 dub domp:
     insert("-- ")
