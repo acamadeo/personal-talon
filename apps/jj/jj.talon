@@ -72,6 +72,7 @@ tag: user.jj
 
 <user.jj_command> move book <user.jj_bookmark> <user.commitmark_destination>:
     insert("jj bookmark move {jj_bookmark} --to {commitmark_destination}")
+    key(enter)
 
 <user.jj_command> abandon <user.jj_commit>:
     insert("jj abandon {jj_commit}")
@@ -83,3 +84,4 @@ tag: user.jj
 
 <user.jj_command> get push <user.jj_bookmark>:
     insert("jj git push --bookmark {jj_bookmark}")
+    key(enter)
