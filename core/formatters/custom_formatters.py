@@ -24,7 +24,7 @@ def patch_code_formatter():
         
         # Add our custom formatters so Talon can use them.
         base_list["sponge"] = "SPONGE_CASE"
-        base_list["regex wildcard"] = "REGEX_WILDCARD"
+        base_list["reggie"] = "REGEX_WILDCARD"
         
         # Assign this dynamically built list to our context.
         ctx.lists[talon_list_name] = base_list
