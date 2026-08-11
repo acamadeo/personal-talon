@@ -40,5 +40,9 @@ void:
 nope: edit.undo()
 yes indeed: edit.redo()
 
+# Commenting
+comment that:
+    key(cmd-/)
+
 # TODO:
 #  - You can say `strings foo` to do 'foo'. Implement a similar thing for parens, brackets, braces.

@@ -25,7 +25,7 @@ run last:
     key(up)
     key(enter)
 
-ssh <user.text>:
+(ssh | connect) <user.text>:
     insert("ssh {text}")
     key(enter)
 

@@ -16,6 +16,10 @@ tag: user.jj
     insert("jj diff -r {jj_commit}")
     key(enter)
 
+<user.jj_command> diff stat <user.jj_commit>:
+    insert("jj diff -r {jj_commit} --stat")
+    key(enter)
+
 <user.jj_command> squash:
     insert("jj squash")
     key(enter)
@@ -76,6 +80,10 @@ tag: user.jj
 
 <user.jj_command> abandon <user.jj_commit>:
     insert("jj abandon {jj_commit}")
+    key(enter)
+
+<user.jj_command> op log:
+    insert("jj op log")
     key(enter)
 
 <user.jj_command> get fetch:
